@@ -1,3 +1,0 @@
-== Open Active Voting Editor
-
-Editor for https://github.com/rbjarnason/open-active-voting
