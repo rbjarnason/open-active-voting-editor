@@ -17,6 +17,7 @@
 
 class BudgetBallot < ActiveRecord::Base
 
+  attr_accessible :price, :link, :idea_id, :budget_ballot_area_id
   belongs_to :budget_ballot_area
   #translates :name, :description
 

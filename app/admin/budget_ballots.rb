@@ -20,6 +20,7 @@ ActiveAdmin.register BudgetBallot do
       f.input :price
       f.input :link
       f.input :idea_id
+      f.input :budget_ballot_area_id
     end
 
     f.translated_inputs "Translated fields" do |t|
