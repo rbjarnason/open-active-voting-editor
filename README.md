@@ -29,8 +29,7 @@ cd config
 cp database.yml.dist database.yml
 vi database.yml
 cd ..
-rake db:create
-rake db:schema:load
+rake db:migrate
 ````
 
 Running the test server
