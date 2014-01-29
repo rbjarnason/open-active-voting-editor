@@ -6,7 +6,7 @@ ActiveAdmin.setup do |config|
   # for each of the active admin pages.
   #
   config.site_title = "Open Active Voting Editor"
-
+config.root_to = 'admin/dashboard#index'
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #

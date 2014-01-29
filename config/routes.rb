@@ -1,10 +1,13 @@
 OpenActiveVotingEditor::Application.routes.draw do
+  match '/' => "admin/dashboard#index"
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   scope ":locale", :path_prefix => '/:locale' do
     ActiveAdmin.routes(self)
   end
 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
