@@ -60,5 +60,7 @@ module OpenActiveVotingEditor
     config.assets.version = '1.0'
 
     config.i18n.available_locales = [:is, :en]
+
+    config.assets.initialize_on_precompile = false
   end
 end
