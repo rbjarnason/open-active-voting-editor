@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  http_basic_authenticate_with name: "editor", password: "ds8vCsk7"
+
   before_filter :set_locale
 
   def set_locale
