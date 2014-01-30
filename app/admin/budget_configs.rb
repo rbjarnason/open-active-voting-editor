@@ -7,6 +7,7 @@ ActiveAdmin.register BudgetConfig do
 
   form do |f|
     f.inputs "Details" do
+      f.input :test_mode
       f.input :election_id
       f.input :rsk_svf_nr
       f.input :rsk_url
@@ -19,5 +20,16 @@ ActiveAdmin.register BudgetConfig do
       f.input :saml_name_identifier_format
     end
     f.actions
+  end
+
+  controller do
+
+    def update
+      if params[:budget_config][:rsk_soap_password].blank?
+        params[:budget_config].delete("rsk_soap_password")
+      end
+      super
+    end
+
   end
 end
