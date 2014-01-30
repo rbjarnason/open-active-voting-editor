@@ -1,6 +1,6 @@
 # coding: utf-8
 
-# Copyright (C) 2010-2013 Íbúar ses
+# Copyright (C) 2010-2014 Íbúar ses / Citizens Foundation
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -19,7 +19,6 @@ class BudgetBallot < ActiveRecord::Base
 
   attr_accessible :price, :link, :idea_id, :budget_ballot_area_id
   belongs_to :budget_ballot_area
-  #translates :name, :description
 
   active_admin_translates :name, :description
 

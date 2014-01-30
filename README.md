@@ -46,3 +46,5 @@ bundle exec rake test:integration
 Browsing the test system
 
 Open http://localhost:3000/ in your browser
+
+Note: You should never have access to this editor on or over the public Internet, if you are managing a real election.
