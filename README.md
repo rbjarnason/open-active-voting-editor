@@ -1,6 +1,7 @@
-Open Active Voting
+Open Active Voting Editor
 
-Simple ballot based voting system.
+Editor for a simple ballot based voting system.
+https://github.com/rbjarnason/open-active-voting
 
 Install Ubuntu dependencies
 ````bash
@@ -19,7 +20,7 @@ sudo make install
 Install bundler and dependencies
 ````bash
 gem install bundler
-cd open-active-voting
+cd open-active-voting-editor
 bundle install
 ````
 
@@ -32,18 +33,10 @@ cd ..
 rake db:migrate
 ````
 
-Running the test server
+Running a dev server
 ````bash
-rails server -e test
+rails server
 ````
-
-In a new terminal Running the tests
-````bash
-cd open-active-voting
-bundle exec rake test:integration
-````
-
-Browsing the test system
 
 Open http://localhost:3000/ in your browser
 

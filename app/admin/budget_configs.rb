@@ -2,6 +2,7 @@ ActiveAdmin.register BudgetConfig do
   index do
     column :id
     column :rsk_url
+    column :soap_url
     default_actions
   end
 
@@ -9,6 +10,7 @@ ActiveAdmin.register BudgetConfig do
     f.inputs "Details" do
       f.input :test_mode
       f.input :election_id
+      f.input :soap_url
       f.input :rsk_svf_nr
       f.input :rsk_url
       f.input :rsk_soap_username

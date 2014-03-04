@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140105194519) do
+ActiveRecord::Schema.define(:version => 20140304181404) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -92,10 +92,10 @@ ActiveRecord::Schema.define(:version => 20140105194519) do
   end
 
   create_table "config", :force => true do |t|
-    t.string   "rsk_url",                             :null => false
-    t.integer  "timeout_in_seconds",                  :null => false
-    t.datetime "created_at",                          :null => false
-    t.datetime "updated_at",                          :null => false
+    t.string   "rsk_url",                                                :null => false
+    t.integer  "timeout_in_seconds",                                     :null => false
+    t.datetime "created_at",                                             :null => false
+    t.datetime "updated_at",                                             :null => false
     t.string   "rsk_soap_username"
     t.string   "rsk_soap_password"
     t.string   "election_id"
@@ -104,6 +104,8 @@ ActiveRecord::Schema.define(:version => 20140105194519) do
     t.string   "saml_idp_cert_fingerprint"
     t.string   "saml_name_identifier_format"
     t.string   "rsk_svf_nr"
+    t.boolean  "test_mode",                           :default => false
+    t.string   "soap_url"
   end
 
   create_table "final_split_votes", :force => true do |t|
