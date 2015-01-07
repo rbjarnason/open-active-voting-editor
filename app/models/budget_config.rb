@@ -15,7 +15,8 @@
 
 class BudgetConfig < ActiveRecord::Base
   attr_accessible  :election_id,:soap_url,:rsk_svf_nr,:rsk_url,:rsk_soap_username,:rsk_soap_password,:timeout_in_seconds, :test_mode,
-                   :saml_assertion_consumer_service_url,:saml_idp_sso_target_url, :saml_idp_cert_fingerprint, :saml_name_identifier_format
+                   :saml_assertion_consumer_service_url,:saml_idp_sso_target_url, :saml_idp_cert_fingerprint, :saml_name_identifier_format,
+                   :public_key
 
   set_table_name "config"
 end

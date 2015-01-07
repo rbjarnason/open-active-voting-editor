@@ -10,6 +10,7 @@ ActiveAdmin.register BudgetConfig do
     f.inputs "Details" do
       f.input :test_mode
       f.input :election_id
+      f.input :public_key
       f.input :soap_url
       f.input :rsk_svf_nr
       f.input :rsk_url
