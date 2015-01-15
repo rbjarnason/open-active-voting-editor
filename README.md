@@ -32,6 +32,11 @@ vi database.yml
 cd ..
 rake db:migrate
 ````
+Create admin user
+````bash
+rails console
+AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
+````
 
 Running a dev server
 ````bash
