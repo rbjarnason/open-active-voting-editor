@@ -1,8 +1,11 @@
 class DeviseCreateAdminUsers < ActiveRecord::Migration
   def migrate(direction)
-    super
+    unless ActiveRecord::Base.connection.table_exists? 'admin_users'
+      super
+    end
     # Create a default user
     AdminUser.create!(:email => 'oav_editor_admin@citizens.is', :password => 'password', :password_confirmation => 'password') if direction == :up
+    puts "Created adming user oav_editor_admin@citizens.is"
   end
 
   def change
