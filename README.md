@@ -32,6 +32,7 @@ vi database.yml
 cd ..
 rake db:migrate
 ````
+
 Create admin user
 ````bash
 rails console
